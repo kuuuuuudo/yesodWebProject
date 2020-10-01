@@ -1,0 +1,4 @@
+<h1>#{header}
+<form action=@{ScheduleR} method="POST" enctype="#{enctype}">
+  ^{widget}
+  <input type="submit" value="送信">

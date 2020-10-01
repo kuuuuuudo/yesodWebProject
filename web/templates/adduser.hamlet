@@ -1,0 +1,4 @@
+<h1>#{header}
+<form action=@{AdduserR} method="POST" enctype="#{enctype}">
+  ^{widget}
+  <input type="submit" value="送信">

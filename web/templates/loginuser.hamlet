@@ -1,0 +1,6 @@
+<h1>#{header}
+<form action=@{LoginuserR} method="POST" enctype="#{enctype}">
+  ^{widget}
+<input type="submit" value="ログイン">
+<br><br>
+<a href="@{AdduserR}">新規登録

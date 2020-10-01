@@ -1,0 +1,19 @@
+<h1>予定一覧
+<a href="@{ScheduleR}">新規登録
+<table border="1px">
+  <tr>
+    <th>日程
+    <th>内容
+    <th>
+  $forall Entity scheduleId schedule <- schedules
+    <tr>
+      <td>
+        #{show $ scheduleDay schedule}
+      <td>
+        #{show $ scheduleContents schedule}
+      <td>
+        <a href="@{ScheduleUpdateR scheduleId}">編集
+        <a href="#" onclick="if(confirm('削除します。')){scheduleDeleteForm.scheduleId.value='#{toPathPiece scheduleId}';scheduleDeleteForm.submit();}">削除
+
+<form name="scheduleDeleteForm" method=post action=@{ScheduleDeleteR}>
+  <input type=hidden name=scheduleId>

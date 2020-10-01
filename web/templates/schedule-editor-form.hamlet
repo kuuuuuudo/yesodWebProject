@@ -1,0 +1,11 @@
+#{extra}
+<table>
+    <tr>
+        <th>#{fvLabel accountidView}
+        <td>^{fvInput accountidView}
+    <tr>
+        <th>#{fvLabel dayView}
+        <td>^{fvInput dayView}
+    <tr>
+        <th>#{fvLabel contentsView}
+        <td>^{fvInput contentsView}
